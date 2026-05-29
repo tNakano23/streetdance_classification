@@ -63,7 +63,7 @@ uv sync
 
 ```bash
 
-git clone https://github.com/tNakano23/streetdance_classification.git
+git clone "https://github.com/tNakano23/streetdance_classification.git"
 cd streetdance_classification
 
 ```
@@ -127,15 +127,7 @@ cd streetdance_classification
 
 ---
 
-### 2. モデル推論 (`sandbox/inf`)
-
-作成したデータセットとモデルを用いて推論を行います。
-
-* **設定の作成**: `_make_config.py`（Streamlit）および `launch_config_server.py` を用いて、推論に必要なYAMLファイルを直感的に生成できます。
-* **推論の実行**: `qwen_inf.py` を実行し、YAMLの設定に従ってバッチ推論を行います。（詳細は`sandbox/inf/README.md`を参照ください。）
-
-
----
+### 2. モデル学習 (`sandbox/finetune`)
 
 1. **ベースリポジトリのクローン**
     本スクリプト群を動かす前に、以下の外部リポジトリをクローンして環境を構築してください。
@@ -154,6 +146,16 @@ cd streetdance_classification
     * `script/my_finetune_lora_vision_*.sh` （画像・LoRA全層対象）
     * `script/my_finetune_video_*.sh` （動画対象）
 
+
+---
+
+
+### 3. モデル推論 (`sandbox/inf`)
+
+作成したデータセットとモデルを用いて推論を行います。
+
+* **設定の作成**: `_make_config.py`（Streamlit）および `launch_config_server.py` を用いて、推論に必要なYAMLファイルを直感的に生成できます。
+* **推論の実行**: `qwen_inf.py` を実行し、YAMLの設定に従ってバッチ推論を行います。（詳細は`sandbox/inf/README.md`を参照ください。）
 
 ---
 
@@ -189,4 +191,4 @@ streamlit run sandbox/eval/script/vis.py
 ## 最後に
 
 本プロジェクトでは一部のデータをdemoとして公開しております。
-データ元は [AIST Dance Video Database](https://aistdance.github.io/index_j.html) です。貴重なデータセットの公開に深く感謝申し上げます。
+データ元は [AIST Dance Video Database](https://aistdancedb.ongaaccel.jp/) です。貴重なデータセットの公開に深く感謝申し上げます。
