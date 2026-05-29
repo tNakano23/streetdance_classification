@@ -1,0 +1,20 @@
+{
+  "data": {
+    "data/dataset_json/beat_clip/test.json": ["data/dataset/beat_clip"],
+    "data/dataset_json/interval_200ms/test.json": ["data/dataset/interval_200ms"],
+    "data/dataset_json/interval_500ms/test.json": ["data/dataset/interval_500ms"],
+    "data/dataset_json/video_ft/test.json": ["data/dataset/video_ft"]
+  },
+  "lora_model": {
+    "image": [
+      "models/demo/Qwen2.5-VL-3B-Instruct/checkpoint-14740",
+      "xxxx"
+    ],
+    "video": [
+      "yyyy",
+      "zzzz"
+    ]
+  },
+  "OUTPUT_DIR": "data/result"
+}
+
