@@ -5,6 +5,8 @@
 
 動画からビート（拍）に合わせたフレーム抽出、複数フレームの画像結合によるデータセット作成、Qwenファミリーをベースとしたモデルのファインチューニング、および実験結果の推論・評価までの一連のパイプラインを提供します。
 
+[speakerdeckのリンクはこちら](https://speakerdeck.com/tnakano23/streetdance-classification-jsai2026)
+
 ---
 
 ## 主な機能
